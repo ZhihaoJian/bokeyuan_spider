@@ -178,6 +178,5 @@ module.exports = {
     savePost,
     saveToDB,
     readWordsFromFile,
-    crawPageContent,
     parseElementHandle,
 }

@@ -19,6 +19,14 @@
                 }
             }
 
+            wordList = wordList.sort(function (a, b) {
+                if (a[1] < b[1]) {
+                    return 1;
+                }else if(a[1] > b[1]){
+                    return -1;
+                }
+            })
+
             WordCloud(document.getElementById('test'), {
                 list: wordList,
                 minRotation: 0,

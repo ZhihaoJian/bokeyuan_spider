@@ -49,7 +49,6 @@ function jieba(post) {
             resolve(wordMap);
         })
     })
-
 }
 
 /**

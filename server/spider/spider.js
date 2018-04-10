@@ -49,16 +49,6 @@ const {
 
         saveToDB(postUrls);
 
-        //根据post文链接抓取post文内容
-        // for (let i = 0; i < postUrls.length; i++) {
-        //     for (let j = 0; j < postUrls[i].length; j++) {
-        //         const postUrl = postUrls[i][j];
-        //         await toPage(page, postUrl, 10000);
-        //         const post = await crawPageContent(page, postUrl);
-        //         savePost({ post, link: postUrl })
-        //     }
-        // }
-
         console.log('PAGE LOG : All tasks have been finished.'.green);
         writeToFileSys();
         await broswer.close();
